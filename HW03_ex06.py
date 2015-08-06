@@ -7,15 +7,19 @@
 # Exercise 1
 # When you submit only include your final function: compare
 
-
-
-
+def compare(x, y):
+    if x > y:
+        return 1
+    elif x == y:
+        return 0
+    else:
+        return -1
 
 ################################################################################
 # Exercise 2
 # When you submit only include your final function: hypotenuse
 # Do develop incrementally. Do not share here.
-
+#def hypotenuse(x, y):
 
 
 
@@ -60,7 +64,7 @@ def main():
     ############################################################################
     # Uncomment the below to test and before commiting:
     # # Exercise 1
-    # compare(1,1)
+    compare(1,1)
     # compare(1,2)
     # compare(2,1)
     # # Exercise 2
