@@ -52,10 +52,6 @@ def is_palindrome(word):
         return first(word) == last(word)
     else:
          return is_palindrome(middle(word))
-       
-    
-
-
     
 
 
