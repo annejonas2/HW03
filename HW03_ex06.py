@@ -7,6 +7,8 @@
 # Exercise 1
 # When you submit only include your final function: compare
 
+
+
 def compare(x, y):
     if x > y:
         return 1
@@ -20,7 +22,8 @@ def compare(x, y):
 # When you submit only include your final function: hypotenuse
 # Do develop incrementally. Do not share here.
 def hypotenuse(x, y):
-    return (x**2 + y**2)
+    import math
+    return math.sqrt(x**2 + y**2)
 
 ################################################################################
 # Exercise 3
@@ -35,21 +38,20 @@ def is_between(x, y, z):
 
 ##spent a couple of hours on this and couldn't get it - must have not fully gotten the points today - then just ran out of time. will try again tomorrow.
 
-# def first(word):
-#     return word[ 0]
+def first(word):
+    return word[ 0]
 
-# def last(word):
-#     return word[ -1]
+def last(word):
+    return word[ -1]
 
-# def middle(word):
-#     return word[ 1:-1]
+def middle(word):
+    return word[ 1:-1]
 
-# def is_palindrome(word):
-#     if not isinstance(word, str): 
-#         print 'palindrome is only defined for strings'
-#         return None
-#     else:
-#         return is_palindrome(first(word) == last(word)
+def is_palindrome(word):
+    if len(word) <= 2:
+        return first(word) == last(word)
+    else:
+         return is_palindrome(middle(word))
        
     
 
@@ -91,10 +93,10 @@ def main():
     print is_between(3,1,2)
     print is_between(1,1,2)
     # # Exercise 6
-    # print is_palindrome("Python")
-    # print is_palindrome("evitative")
-    # print is_palindrome("sememes")
-    # print is_palindrome("oooooooooooo")
+    print is_palindrome("Python")
+    print is_palindrome("evitative")
+    print is_palindrome("sememes")
+    print is_palindrome("oooooooooooo")
     # # Exercise 7
     # print is_power(28,3)
     # print is_power(27,3)
